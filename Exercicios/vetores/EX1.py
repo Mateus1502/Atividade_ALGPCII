@@ -1,28 +1,21 @@
-"""
-Fazer um algoritmo que calcule e imprima o soma, a média, o maior e o menor dos 
-valores armazenados em um vetor A de 100 elementos
-numéricos a serem lidos do dispositivo de entrada padrão.
-"""
-
-vet = []
+vetor = []
 soma = 0
 maior = 0
-menor = float('inf')         #aqui ela vai pegar o maior valor possivel, sendo garantido que vai ser menor o valor que entrar nesse if
+menor = float('inf')     
 
 for c in range(100):
-    num = float(input('Digite numero: '))
+    numero = float(input('Digite numero: '))
     vet.append(num)
 
-for num in vet:
+for numero in vetor:
     soma += num
-    if num > maior:
-        maior = num
-    if num < menor:
-        menor = num
-media = soma / len(vet)
-print(vet)
+    if numero > maior:
+        maior = numero
+    if numero < menor:
+        menor = numero
+media = soma / len(vetor)
+print(vetor)
 print(maior)
 print(menor)
 print(media)
 print(soma)
-
