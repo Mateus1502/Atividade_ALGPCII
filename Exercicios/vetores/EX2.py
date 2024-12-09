@@ -3,6 +3,6 @@ aux = []
 
 for i in vetor:
     aux.append(i)
-print(vet)
+print(vetor)
 print(aux)
 
